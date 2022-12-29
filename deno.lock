@@ -2,7 +2,13 @@
   "version": "2",
   "remote": {},
   "npm": {
-    "specifiers": { "vite": "vite@4.0.3" },
+    "specifiers": {
+      "@vitejs/plugin-react-swc@^3.0.0": "@vitejs/plugin-react-swc@3.0.1_vite@4.0.3",
+      "react-dom@^18.2.0": "react-dom@18.2.0_react@18.2.0",
+      "react@^18.2.0": "react@18.2.0",
+      "vite": "vite@4.0.3",
+      "vite@^4.0.0": "vite@4.0.3"
+    },
     "packages": {
       "@esbuild/android-arm64@0.16.12": {
         "integrity": "sha512-0LacmiIW+X0/LOLMZqYtZ7d4uY9fxYABAYhSSOu+OGQVBqH4N5eIYgkT7bBFnR4Nm3qo6qS3RpHKVrDASqj/uQ==",
@@ -92,6 +98,68 @@
         "integrity": "sha512-iPYKN78t3op2+erv2frW568j1q0RpqX6JOLZ7oPPaAV1VaF7dDstOrNw37PVOYoTWE11pV4A1XUitpdEFNIsPg==",
         "dependencies": {}
       },
+      "@swc/core-darwin-arm64@1.3.24": {
+        "integrity": "sha512-rR+9UpWm+fGXcipsjCst2hIL1GYIbo0YTLhJZWdIpQD6KRHHJMFXiydMgQQkDj2Ml7HpqUVgxj6m4ZWYL8b0OA==",
+        "dependencies": {}
+      },
+      "@swc/core-darwin-x64@1.3.24": {
+        "integrity": "sha512-px+5vkGtgPH0m3FkkTBHynlRdS5rRz+lK+wiXIuBZFJSySWFl6RkKbvwkD+sf0MpazQlqwlv/rTOGJBw6oDffg==",
+        "dependencies": {}
+      },
+      "@swc/core-linux-arm-gnueabihf@1.3.24": {
+        "integrity": "sha512-jLs8ZOdTV4UW4J12E143QJ4mOMONQtqgAnuhBbRuWFzQ3ny1dfoC3P1jNWAJ2Xi59XdxAIXn0PggPNH4Kh34kw==",
+        "dependencies": {}
+      },
+      "@swc/core-linux-arm64-gnu@1.3.24": {
+        "integrity": "sha512-A/v0h70BekrwGpp1DlzIFGcHQ3QQ2PexXcnnuIBZeMc9gNmHlcZmg3EcwAnaUDiokhNuSUFA/wV94yk1OqmSkw==",
+        "dependencies": {}
+      },
+      "@swc/core-linux-arm64-musl@1.3.24": {
+        "integrity": "sha512-pbc9eArWPTiMrbpS/pJo0IiQNAKAQBcBIDjWBGP1tcw2iDXYLw4bruwz9kI/VjakbshWb8MoE4T5ClkeuULvSw==",
+        "dependencies": {}
+      },
+      "@swc/core-linux-x64-gnu@1.3.24": {
+        "integrity": "sha512-pP5pOLlY1xd352qo7rTlpVPUI9/9VhOd4b3Lk+LzfZDq9bTL2NDlGfyrPiwa5DGHMSzrugH56K2J68eutkxYVA==",
+        "dependencies": {}
+      },
+      "@swc/core-linux-x64-musl@1.3.24": {
+        "integrity": "sha512-phNbP7zGp+Wcyxq1Qxlpe5KkxO7WLT2kVQUC7aDFGlVdCr+xdXsfH1MzheHtnr0kqTVQX1aiM8XXXHfFxR0oNA==",
+        "dependencies": {}
+      },
+      "@swc/core-win32-arm64-msvc@1.3.24": {
+        "integrity": "sha512-qhbiJTWAOqyR+K9xnGmCkOWSz2EmWpDBstEJCEOTc6FZiEdbiTscDmqTcMbCKaTHGu8t+6erVA4t65/Eg6uWPA==",
+        "dependencies": {}
+      },
+      "@swc/core-win32-ia32-msvc@1.3.24": {
+        "integrity": "sha512-JfghIlscE4Rz+Lc08lSoDh+R0cWxrISed5biogFfE6vZqhaDnw3E5Qshqw7O3pIaiq8L2u1nmzuyP581ZmpbRA==",
+        "dependencies": {}
+      },
+      "@swc/core-win32-x64-msvc@1.3.24": {
+        "integrity": "sha512-3AmJRr0hwciwDBbzUNqaftvppzS8v9X/iv/Wl7YaVLBVpPfQvaZzfqLycvNMGLZb5vIKXR/u58txg3dRBGsJtw==",
+        "dependencies": {}
+      },
+      "@swc/core@1.3.24": {
+        "integrity": "sha512-QMOTd0AgiUT3K1crxLRqd3gw0f3FC8hhH1vvlIlryvYqU4c+FJ/T2G4ZhMKLxQlZ/jX6Rhk0gKINZRBxy2GFyQ==",
+        "dependencies": {
+          "@swc/core-darwin-arm64": "@swc/core-darwin-arm64@1.3.24",
+          "@swc/core-darwin-x64": "@swc/core-darwin-x64@1.3.24",
+          "@swc/core-linux-arm-gnueabihf": "@swc/core-linux-arm-gnueabihf@1.3.24",
+          "@swc/core-linux-arm64-gnu": "@swc/core-linux-arm64-gnu@1.3.24",
+          "@swc/core-linux-arm64-musl": "@swc/core-linux-arm64-musl@1.3.24",
+          "@swc/core-linux-x64-gnu": "@swc/core-linux-x64-gnu@1.3.24",
+          "@swc/core-linux-x64-musl": "@swc/core-linux-x64-musl@1.3.24",
+          "@swc/core-win32-arm64-msvc": "@swc/core-win32-arm64-msvc@1.3.24",
+          "@swc/core-win32-ia32-msvc": "@swc/core-win32-ia32-msvc@1.3.24",
+          "@swc/core-win32-x64-msvc": "@swc/core-win32-x64-msvc@1.3.24"
+        }
+      },
+      "@vitejs/plugin-react-swc@3.0.1_vite@4.0.3": {
+        "integrity": "sha512-3GQ2oruZO9j8dSHcI0MUeOZQBhjYyDQsF/pKY4Px+CJxn0M16OhgFeEzUjeuwci4zhhjoNIDE9aFNaV5GMQ09g==",
+        "dependencies": {
+          "@swc/core": "@swc/core@1.3.24",
+          "vite": "vite@4.0.3"
+        }
+      },
       "esbuild@0.16.12": {
         "integrity": "sha512-eq5KcuXajf2OmivCl4e89AD3j8fbV+UTE9vczEzq5haA07U9oOTzBWlh3+6ZdjJR7Rz2QfWZ2uxZyhZxBgJ4+g==",
         "dependencies": {
@@ -135,6 +203,14 @@
         "integrity": "sha512-RRjxlvLDkD1YJwDbroBHMb+cukurkDWNyHx7D3oNB5x9rb5ogcksMC5wHCadcXoo67gVr/+3GFySh3134zi6rw==",
         "dependencies": { "has": "has@1.0.3" }
       },
+      "js-tokens@4.0.0": {
+        "integrity": "sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==",
+        "dependencies": {}
+      },
+      "loose-envify@1.4.0": {
+        "integrity": "sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==",
+        "dependencies": { "js-tokens": "js-tokens@4.0.0" }
+      },
       "nanoid@3.3.4": {
         "integrity": "sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==",
         "dependencies": {}
@@ -155,6 +231,18 @@
           "source-map-js": "source-map-js@1.0.2"
         }
       },
+      "react-dom@18.2.0_react@18.2.0": {
+        "integrity": "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==",
+        "dependencies": {
+          "loose-envify": "loose-envify@1.4.0",
+          "react": "react@18.2.0",
+          "scheduler": "scheduler@0.23.0"
+        }
+      },
+      "react@18.2.0": {
+        "integrity": "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==",
+        "dependencies": { "loose-envify": "loose-envify@1.4.0" }
+      },
       "resolve@1.22.1": {
         "integrity": "sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==",
         "dependencies": {
@@ -166,6 +254,10 @@
       "rollup@3.9.0": {
         "integrity": "sha512-nGGylpmblyjTpF4lEUPgmOw6OVxRvnI6Iuuh6Lz4O/X66cVOX1XJSsqP1YamxQ+mPuFE7qJxLFDSCk8rNv5dDw==",
         "dependencies": { "fsevents": "fsevents@2.3.2" }
+      },
+      "scheduler@0.23.0": {
+        "integrity": "sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==",
+        "dependencies": { "loose-envify": "loose-envify@1.4.0" }
       },
       "source-map-js@1.0.2": {
         "integrity": "sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==",
